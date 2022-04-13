@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="ly"> Lý </br>
+    <input type="number" id="hoa"> Hóa </br>
+    <input type="number" id="sinh"> Sinh </br>
+<button type="button" onclick="tong()">Điểm tổng</button> <button type="button" onclick="trungbinh()">Điểm trung bình</button>
+</body>
+</html>
+<script>
+    function tong(){
+        let vatly = document.getElementById("ly").value;
+        let hoaHoc = document.getElementById("hoa").value;
+        let sinhHoc = document.getElementById("sinh").value;
+        let sum = parseInt(vatly)+ parseInt(hoaHoc) + parseInt(sinhHoc);
+        alert(sum);
+    }
+    function trungbinh(){
+        let vatly = document.getElementById("ly").value;
+        let hoaHoc = document.getElementById("hoa").value;
+        let sinhHoc = document.getElementById("sinh").value;
+        let sim = (parseInt(vatly)+ parseInt(hoaHoc) + parseInt(sinhHoc))/3
+        alert(sim)
+    }
+</script>
